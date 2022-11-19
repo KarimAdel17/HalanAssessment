@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import TwitterCounter
+import TwitterCounterPackage
 @testable import HalanAssessment
 
 class HalanAssessmentTests: XCTestCase {
