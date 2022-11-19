@@ -6,9 +6,16 @@
 //
 
 import XCTest
+import TwitterCounter
 @testable import HalanAssessment
 
 class HalanAssessmentTests: XCTestCase {
+    
+    func twitterCounterTest() {
+        let twitterCounter = TwitterCounterContainerView()
+        
+        XCTAssertNotNil(twitterCounter)
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

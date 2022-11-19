@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		D5C055D229290F2900623D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C055D129290F2900623D5E /* AppDelegate.swift */; };
 		D5C055D429290F2900623D5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C055D329290F2900623D5E /* SceneDelegate.swift */; };
-		D5C055D629290F2900623D5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C055D529290F2900623D5E /* ViewController.swift */; };
-		D5C055D929290F2900623D5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C055D729290F2900623D5E /* Main.storyboard */; };
 		D5C055DB29290F2B00623D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C055DA29290F2B00623D5E /* Assets.xcassets */; };
 		D5C055DE29290F2B00623D5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C055DC29290F2B00623D5E /* LaunchScreen.storyboard */; };
 		D5C055E929290F2B00623D5E /* HalanAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C055E829290F2B00623D5E /* HalanAssessmentTests.swift */; };
 		D5C055F329290F2B00623D5E /* HalanAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C055F229290F2B00623D5E /* HalanAssessmentUITests.swift */; };
 		D5C055F529290F2B00623D5E /* HalanAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C055F429290F2B00623D5E /* HalanAssessmentUITestsLaunchTests.swift */; };
+		D5C056072929103B00623D5E /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C056062929103B00623D5E /* TwitterViewController.swift */; };
+		D5C0560A2929106100623D5E /* TwitterCounter in Frameworks */ = {isa = PBXBuildFile; productRef = D5C056092929106100623D5E /* TwitterCounter */; };
+		D5C0560D292967EA00623D5E /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0560C292967E900623D5E /* BaseNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		D5C055CE29290F2900623D5E /* HalanAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalanAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C055D129290F2900623D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5C055D329290F2900623D5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D5C055D529290F2900623D5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D5C055D829290F2900623D5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5C055DA29290F2B00623D5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C055DD29290F2B00623D5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C055DF29290F2B00623D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,9 @@
 		D5C055EE29290F2B00623D5E /* HalanAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalanAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C055F229290F2B00623D5E /* HalanAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanAssessmentUITests.swift; sourceTree = "<group>"; };
 		D5C055F429290F2B00623D5E /* HalanAssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanAssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D5C0560129290F5800623D5E /* TwitterCounter */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TwitterCounter; path = ../TwitterCounter; sourceTree = "<group>"; };
+		D5C056062929103B00623D5E /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		D5C0560C292967E900623D5E /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C0560A2929106100623D5E /* TwitterCounter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +82,12 @@
 		D5C055C529290F2900623D5E = {
 			isa = PBXGroup;
 			children = (
+				D5C0560129290F5800623D5E /* TwitterCounter */,
 				D5C055D029290F2900623D5E /* HalanAssessment */,
 				D5C055E729290F2B00623D5E /* HalanAssessmentTests */,
 				D5C055F129290F2B00623D5E /* HalanAssessmentUITests */,
 				D5C055CF29290F2900623D5E /* Products */,
+				D5C056082929106100623D5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +104,9 @@
 		D5C055D029290F2900623D5E /* HalanAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				D5C055D129290F2900623D5E /* AppDelegate.swift */,
-				D5C055D329290F2900623D5E /* SceneDelegate.swift */,
-				D5C055D529290F2900623D5E /* ViewController.swift */,
-				D5C055D729290F2900623D5E /* Main.storyboard */,
-				D5C055DA29290F2B00623D5E /* Assets.xcassets */,
-				D5C055DC29290F2B00623D5E /* LaunchScreen.storyboard */,
-				D5C055DF29290F2B00623D5E /* Info.plist */,
+				D5C0560229290FAD00623D5E /* Configuration */,
+				D5C0560B292967C900623D5E /* Utilities */,
+				D5C056032929100B00623D5E /* Modules */,
 			);
 			path = HalanAssessment;
 			sourceTree = "<group>";
@@ -127,6 +128,57 @@
 			path = HalanAssessmentUITests;
 			sourceTree = "<group>";
 		};
+		D5C0560229290FAD00623D5E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D5C055D129290F2900623D5E /* AppDelegate.swift */,
+				D5C055D329290F2900623D5E /* SceneDelegate.swift */,
+				D5C055DA29290F2B00623D5E /* Assets.xcassets */,
+				D5C055DC29290F2B00623D5E /* LaunchScreen.storyboard */,
+				D5C055DF29290F2B00623D5E /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		D5C056032929100B00623D5E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D5C056042929101F00623D5E /* Twitter */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D5C056042929101F00623D5E /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				D5C056052929102A00623D5E /* View */,
+			);
+			path = Twitter;
+			sourceTree = "<group>";
+		};
+		D5C056052929102A00623D5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5C056062929103B00623D5E /* TwitterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D5C056082929106100623D5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5C0560B292967C900623D5E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D5C0560C292967E900623D5E /* BaseNavigationController.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +195,9 @@
 			dependencies = (
 			);
 			name = HalanAssessment;
+			packageProductDependencies = (
+				D5C056092929106100623D5E /* TwitterCounter */,
+			);
 			productName = HalanAssessment;
 			productReference = D5C055CE29290F2900623D5E /* HalanAssessment.app */;
 			productType = "com.apple.product-type.application";
@@ -233,7 +288,6 @@
 			files = (
 				D5C055DE29290F2B00623D5E /* LaunchScreen.storyboard in Resources */,
 				D5C055DB29290F2B00623D5E /* Assets.xcassets in Resources */,
-				D5C055D929290F2900623D5E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C055D629290F2900623D5E /* ViewController.swift in Sources */,
+				D5C0560D292967EA00623D5E /* BaseNavigationController.swift in Sources */,
+				D5C056072929103B00623D5E /* TwitterViewController.swift in Sources */,
 				D5C055D229290F2900623D5E /* AppDelegate.swift in Sources */,
 				D5C055D429290F2900623D5E /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D5C055D729290F2900623D5E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5C055D829290F2900623D5E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D5C055DC29290F2B00623D5E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,10 +486,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BDKH235AA2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HalanAssessment/Info.plist;
+				INFOPLIST_FILE = HalanAssessment/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,10 +513,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BDKH235AA2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HalanAssessment/Info.plist;
+				INFOPLIST_FILE = HalanAssessment/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -602,6 +647,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D5C056092929106100623D5E /* TwitterCounter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TwitterCounter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D5C055C629290F2900623D5E /* Project object */;
 }
