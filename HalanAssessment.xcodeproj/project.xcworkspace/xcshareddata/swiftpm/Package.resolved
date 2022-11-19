@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "twittercounterpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KarimAdel17/TwitterCounterPackage.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0961195d5c493cd4a2c58a4ab25df7afed859609"
+      }
+    }
+  ],
+  "version" : 2
+}

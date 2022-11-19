@@ -6,10 +6,10 @@
 //
 
 import UIKit
-import TwitterCounter
+import TwitterCounterPackage
 
 class TwitterViewController: UIViewController {
-
+    
     lazy var containerView: TwitterCounterContainerView = {
         let view = TwitterCounterContainerView()
         return view
@@ -20,20 +20,17 @@ class TwitterViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.title = "Twitter character count"
         
-//        self.view.backgroundColor = .red
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-
-            view.addGestureRecognizer(tap)
+        view.addGestureRecognizer(tap)
     }
-
+    
     override func loadView() {
         super.loadView()
         self.view = containerView
     }
-
+    
     @objc func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
-
+    
 }

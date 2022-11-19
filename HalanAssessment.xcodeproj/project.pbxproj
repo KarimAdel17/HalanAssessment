@@ -15,8 +15,8 @@
 		D5C055F329290F2B00623D5E /* HalanAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C055F229290F2B00623D5E /* HalanAssessmentUITests.swift */; };
 		D5C055F529290F2B00623D5E /* HalanAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C055F429290F2B00623D5E /* HalanAssessmentUITestsLaunchTests.swift */; };
 		D5C056072929103B00623D5E /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C056062929103B00623D5E /* TwitterViewController.swift */; };
-		D5C0560A2929106100623D5E /* TwitterCounter in Frameworks */ = {isa = PBXBuildFile; productRef = D5C056092929106100623D5E /* TwitterCounter */; };
 		D5C0560D292967EA00623D5E /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0560C292967E900623D5E /* BaseNavigationController.swift */; };
+		D5C056102929713100623D5E /* TwitterCounterPackage in Frameworks */ = {isa = PBXBuildFile; productRef = D5C0560F2929713100623D5E /* TwitterCounterPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,6 @@
 		D5C055EE29290F2B00623D5E /* HalanAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalanAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C055F229290F2B00623D5E /* HalanAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanAssessmentUITests.swift; sourceTree = "<group>"; };
 		D5C055F429290F2B00623D5E /* HalanAssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalanAssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D5C0560129290F5800623D5E /* TwitterCounter */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TwitterCounter; path = ../TwitterCounter; sourceTree = "<group>"; };
 		D5C056062929103B00623D5E /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		D5C0560C292967E900623D5E /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C0560A2929106100623D5E /* TwitterCounter in Frameworks */,
+				D5C056102929713100623D5E /* TwitterCounterPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +81,6 @@
 		D5C055C529290F2900623D5E = {
 			isa = PBXGroup;
 			children = (
-				D5C0560129290F5800623D5E /* TwitterCounter */,
 				D5C055D029290F2900623D5E /* HalanAssessment */,
 				D5C055E729290F2B00623D5E /* HalanAssessmentTests */,
 				D5C055F129290F2B00623D5E /* HalanAssessmentUITests */,
@@ -196,7 +194,7 @@
 			);
 			name = HalanAssessment;
 			packageProductDependencies = (
-				D5C056092929106100623D5E /* TwitterCounter */,
+				D5C0560F2929713100623D5E /* TwitterCounterPackage */,
 			);
 			productName = HalanAssessment;
 			productReference = D5C055CE29290F2900623D5E /* HalanAssessment.app */;
@@ -270,6 +268,9 @@
 				Base,
 			);
 			mainGroup = D5C055C529290F2900623D5E;
+			packageReferences = (
+				D5C0560E2929713100623D5E /* XCRemoteSwiftPackageReference "TwitterCounterPackage" */,
+			);
 			productRefGroup = D5C055CF29290F2900623D5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -648,10 +649,22 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		D5C0560E2929713100623D5E /* XCRemoteSwiftPackageReference "TwitterCounterPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KarimAdel17/TwitterCounterPackage.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		D5C056092929106100623D5E /* TwitterCounter */ = {
+		D5C0560F2929713100623D5E /* TwitterCounterPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = TwitterCounter;
+			package = D5C0560E2929713100623D5E /* XCRemoteSwiftPackageReference "TwitterCounterPackage" */;
+			productName = TwitterCounterPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
